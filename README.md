@@ -20,13 +20,9 @@ Description=Electricity prices watch GUI
 
 [Service]
 ExecStart=/usr/bin/python3 "/<path to script>/sahkohinnat_gui_laajennettu_v5.py"
-
 WorkingDirectory=/<path to script>
-
 Environment=DISPLAY=:0
-
 Environment=XAUTHORITY=/home/<user>/.Xauthority
-
 
 [Install]
 WantedBy=default.target
