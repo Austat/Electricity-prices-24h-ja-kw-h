@@ -14,13 +14,13 @@ It uses the public API "https://www.sahkohinta-api.fi/api/v1/halpa"
 You can run the Python GUI automatically using a user‑level systemd service.
 
 ### 1. Create the directory
-  
+```bash  
   mkdir -p ~/.config/systemd/user
   mkdir -p ~/.config/systemd/user
   nano ~/.config/systemd/user/sahkon_seuranta.service
-
+```
 ### 2. Add these inside the file:
-  
+```bash  
   [Unit]
   Description=Electricity prices watch GUI
   
@@ -29,12 +29,13 @@ You can run the Python GUI automatically using a user‑level systemd service.
   WorkingDirectory=/<path to script>
   Environment=DISPLAY=:0
   Environment=XAUTHORITY=/home/<user>/.Xauthority
-
+```
 ### 3. [Install]
-
+```bash
   WantedBy=default.target
   
   And enable & start service:
   systemctl --user daemon-reload
   systemctl --user enable sahkon_seuranta.service
   systemctl --user start sahkon_seuranta.service
+```
