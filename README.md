@@ -29,12 +29,11 @@ You can run the Python GUI automatically using a user‑level systemd service.
   WorkingDirectory=/<path to script>
   Environment=DISPLAY=:0
   Environment=XAUTHORITY=/home/<user>/.Xauthority
+  WantedBy=default.target
 ```
 ### 3. [Install]
-```bash
-  WantedBy=default.target
-  
   And enable & start service:
+```bash  
   systemctl --user daemon-reload
   systemctl --user enable sahkon_seuranta.service
   systemctl --user start sahkon_seuranta.service
