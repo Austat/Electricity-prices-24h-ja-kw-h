@@ -3,7 +3,7 @@ Automatically working electricity price fetcher. Shows cents/kWh and € / h and
 
 Script gets current stock electricity prices for the current moment and 24 hours after that.
 
-<img width="2554" height="1436" alt="image" src="https://github.com/user-attachments/assets/ecfa60c8-c134-4e60-a722-47631f929b5d" />
+<img width="2555" height="1433" alt="image" src="https://github.com/user-attachments/assets/6ee98ed0-ed3a-497d-8ffa-b9bff8b7fe55" />
 
 It uses the public API "https://www.sahkohinta-api.fi/api/v1/halpa"
 
