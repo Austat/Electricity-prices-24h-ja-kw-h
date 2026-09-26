@@ -25,7 +25,7 @@ You can run the Python GUI automatically using a user‑level systemd service.
   Description=Electricity prices watch GUI
   
   [Service]
-  ExecStart=/usr/bin/python3 "/<path to script>/sahkohinnat_gui_laajennettu_v5.py"
+  ExecStart=/usr/bin/python3 "/<path to script>/sahkohinnat_gui_laajennettu_v7.py"
   WorkingDirectory=/<path to script>
   Environment=DISPLAY=:0
   Environment=XAUTHORITY=/home/<user>/.Xauthority
